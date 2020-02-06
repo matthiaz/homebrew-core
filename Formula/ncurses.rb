@@ -24,7 +24,8 @@ class Ncurses < Formula
                           "--enable-symlinks",
                           "--enable-widec",
                           "--with-shared",
-                          "--with-gpm=no"
+                          "--with-gpm=no",
+                          "--with-termlib"
     system "make", "install"
     make_libncurses_symlinks
 
